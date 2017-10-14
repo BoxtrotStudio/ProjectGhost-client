@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 7dde7d91fd3ee4234ba6072993e7f727
+timeCreated: 1508003226
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: 7th Service Leftalic
+  fontNames:
+  - 7th Service Leftalic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

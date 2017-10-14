@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 68bb2f41ece9e40e38be30b2f8bb505c
+timeCreated: 1508003226
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: NBP Informa FiveThree
+  fontNames:
+  - NBP Informa FiveThree
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

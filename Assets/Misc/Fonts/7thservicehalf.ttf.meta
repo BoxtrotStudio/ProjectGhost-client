@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: cc0f0806e850449f5ba4e278c1d6c55b
+timeCreated: 1508003226
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: 7th Service Halftone
+  fontNames:
+  - 7th Service Halftone
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
