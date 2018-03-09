@@ -72,7 +72,7 @@ public class BulkEntityStatePacket : Packet
             if (Mathf.Abs(entity.transform.position.x - x) < 2 && Mathf.Abs(entity.transform.position.y - y) < 2)
             {
                 
-                var newPos = new Vector3(x + ((Ghost.latency / 60f) * xVel), y + ((Ghost.latency / 60f) * yVel));
+                var newPos = new Vector3(x + ((Ghost.Latency / 60f) * xVel), y + ((Ghost.Latency / 60f) * yVel));
                 entity.transform.position = newPos;
             } 
             else

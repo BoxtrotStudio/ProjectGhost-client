@@ -14,4 +14,6 @@ public static class Ghost {
     }
     
     public static bool IsDebug { get; private set; }
+
+    public static float Latency;
 }
