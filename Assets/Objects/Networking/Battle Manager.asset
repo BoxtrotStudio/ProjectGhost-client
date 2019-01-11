@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c68fc0f2ad04ac8acfa2905b3aca51, type: 3}
+  m_Name: Battle Manager
+  m_EditorClassIdentifier: 
+  info:
+    StartX: 56
+    StartY: 256
+    SelfID: 20
+    SelfCharacter: 0
+    Allies:
+      _Buckets: 00000000ffffffffffffffff
+      _HashCodes: 4428d3050000000000000000
+      _Next: ffffffff0000000000000000
+      _Count: 1
+      _Version: 1
+      _FreeList: -1
+      _FreeCount: 0
+      _Keys:
+      - fsdfs
+      - 
+      - 
+      _Values: 000000000000000000000000
+    Enemies:
+      _Buckets: ffffffffffffffff00000000
+      _HashCodes: 332e1f000000000000000000
+      _Next: ffffffff0000000000000000
+      _Count: 1
+      _Version: 1
+      _FreeList: -1
+      _FreeCount: 0
+      _Keys:
+      - Alem
+      - 
+      - 
+      _Values: 000000000000000000000000
+  MatchText: {fileID: 11400000, guid: fbcba61122e4f4967ace6047a2bb184c, type: 2}
+  Client: {fileID: 11400000, guid: 66df1be12c79b407e80e8f37574b8083, type: 2}

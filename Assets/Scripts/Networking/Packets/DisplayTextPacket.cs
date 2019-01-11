@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DisplayTextPacket : Packet {
-	protected override void handle()
+	protected override void Handle()
 	{
 		var textLength = Consume(4).AsInt();
 		var text = Consume(textLength).AsString();

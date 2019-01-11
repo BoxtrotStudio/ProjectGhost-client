@@ -23,7 +23,7 @@ public class ConsumedData {
      */
     public int AsInt()
     {
-        if (index + 4 >= data.Length)
+        if (index + 4 - 1 >= data.Length)
             throw new IOException("No more data!");
         
         int i =  BitConverter.ToInt32(data, index);
@@ -36,7 +36,7 @@ public class ConsumedData {
      * @return The long value
      */
     public long AsLong() {
-        if (index + 8 >= data.Length)
+        if (index + 8 - 1 >= data.Length)
             throw new IOException("No more data!");
         
         long i = BitConverter.ToInt64(data, index);
@@ -49,7 +49,7 @@ public class ConsumedData {
      * @return The float value
      */
     public float AsFloat() {
-        if (index + 4 >= data.Length)
+        if (index + 4 - 1 >= data.Length)
             throw new IOException("No more data!");
         
         float i = BitConverter.ToSingle(data, index);
@@ -62,7 +62,7 @@ public class ConsumedData {
      * @return The double value
      */
     public double AsDouble() {
-        if (index + 8 >= data.Length)
+        if (index + 8 - 1 >= data.Length)
             throw new IOException("No more data!");
         
         double i = BitConverter.ToDouble(data, index);
@@ -75,7 +75,7 @@ public class ConsumedData {
      * @return The short value
      */
     public short AsShort() {
-        if (index + 2 >= data.Length)
+        if (index + 2 - 1 > data.Length)
             throw new IOException("No more data!");
         
         short i = BitConverter.ToInt16(data, index);
@@ -102,7 +102,7 @@ public class ConsumedData {
      */
     public String AsString()
     {
-        return BitConverter.ToString(data);
+        return Encoding.ASCII.GetString(data);
     }
 
     /**

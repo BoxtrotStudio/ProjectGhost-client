@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class LoadFromPathSprite : MonoBehaviour
 {
-
+	public static readonly int folderNameLength = "sprites/".Length;
 	public string spriteName;
 	private SpriteRenderer renderer;
 	// Use this for initialization
@@ -13,12 +13,13 @@ public class LoadFromPathSprite : MonoBehaviour
 	{
 		if (spriteName.Contains(".png"))
 			spriteName = spriteName.Replace(".png", "");
+
+		if (spriteName.StartsWith("sprites/"))
+			spriteName = spriteName.Substring(folderNameLength);
 		
 		renderer = GetComponent<SpriteRenderer>();
 
-		var sp = Resources.Load("Sprites/" + spriteName) as Texture2D;
-
-		var sprite = Sprite.Create(sp, new Rect(0, 0, sp.width, sp.height), new Vector2(0.5f, 0.5f));
+		var sprite = Resources.Load<Sprite>("Sprites/" + spriteName);
 
 		renderer.sprite = sprite;
 	}

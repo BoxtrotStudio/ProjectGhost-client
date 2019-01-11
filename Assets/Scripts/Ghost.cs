@@ -14,6 +14,19 @@ public static class Ghost {
     }
     
     public static bool IsDebug { get; private set; }
+    public static string Session { get; set; }
 
     public static float Latency;
+
+    public static void Log(string message)
+    {
+        if (IsDebug)
+            Debug.Log(message);
+    }
+    
+    public static void Log(object message)
+    {
+        if (IsDebug)
+            Debug.Log(message);
+    }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemActivatedEffect : Packet {
-	protected override void handle()
+	protected override void Handle()
 	{
 		var id = Consume(2).AsShort();
 		var owner = Consume(2).AsShort();

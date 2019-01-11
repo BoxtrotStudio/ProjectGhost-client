@@ -181,7 +181,7 @@ public class Packet {
     public Packet Write<T>(T? obj) where T: struct 
     {
         if (obj.HasValue)
-        {
+        {   
             return Write(obj.Value);
         }
         else
@@ -254,6 +254,22 @@ public class Packet {
         tempWriter.WriteByte(val);
         return this;
     }
+    
+    /**
+     * Write a byte into this packet
+     * @param val The byte value
+     * @return This packet
+     */
+    public Packet Write(byte? val) {
+        if (val.HasValue)
+        {
+            return Write(val.Value);
+        }
+        else
+        {
+            throw new ArgumentException("Cannot write a null type!");
+        }
+    }
 
     /**
      * Write an int into this packet
@@ -271,6 +287,22 @@ public class Packet {
         tempWriter.Write(data, 0, data.Length);
         return this;
     }
+    
+    /**
+     * Write a byte into this packet
+     * @param val The byte value
+     * @return This packet
+     */
+    public Packet Write(int? val) {
+        if (val.HasValue)
+        {
+            return Write(val.Value);
+        }
+        else
+        {
+            throw new ArgumentException("Cannot write a null type!");
+        }
+    }
 
     /**
      * Write a float into this packet
@@ -286,6 +318,22 @@ public class Packet {
         byte[] data = BitConverter.GetBytes(val);
         tempWriter.Write(data, 0, data.Length);
         return this;
+    }
+    
+    /**
+     * Write a byte into this packet
+     * @param val The byte value
+     * @return This packet
+     */
+    public Packet Write(float? val) {
+        if (val.HasValue)
+        {
+            return Write(val.Value);
+        }
+        else
+        {
+            throw new ArgumentException("Cannot write a null type!");
+        }
     }
 
     /**
@@ -303,6 +351,22 @@ public class Packet {
         tempWriter.Write(data, 0, data.Length);
         return this;
     }
+    
+    /**
+     * Write a byte into this packet
+     * @param val The byte value
+     * @return This packet
+     */
+    public Packet Write(double? val) {
+        if (val.HasValue)
+        {
+            return Write(val.Value);
+        }
+        else
+        {
+            throw new ArgumentException("Cannot write a null type!");
+        }
+    }
 
     /**
      * Write a long into this packet
@@ -319,6 +383,22 @@ public class Packet {
         tempWriter.Write(data, 0, data.Length);
         return this;
     }
+    
+    /**
+     * Write a byte into this packet
+     * @param val The byte value
+     * @return This packet
+     */
+    public Packet Write(long? val) {
+        if (val.HasValue)
+        {
+            return Write(val.Value);
+        }
+        else
+        {
+            throw new ArgumentException("Cannot write a null type!");
+        }
+    }
 
     /**
      * Write a short into this packet
@@ -334,6 +414,22 @@ public class Packet {
         byte[] data = BitConverter.GetBytes(val);
         tempWriter.Write(data, 0, data.Length);
         return this;
+    }
+    
+    /**
+     * Write a byte into this packet
+     * @param val The byte value
+     * @return This packet
+     */
+    public Packet Write(short? val) {
+        if (val.HasValue)
+        {
+            return Write(val.Value);
+        }
+        else
+        {
+            throw new ArgumentException("Cannot write a null type!");
+        }
     }
 
     /**
@@ -383,6 +479,22 @@ public class Packet {
         tempWriter.WriteByte(value ? (byte)1 : (byte)0);
         return this;
     }
+    
+    /**
+     * Write a byte into this packet
+     * @param val The byte value
+     * @return This packet
+     */
+    public Packet Write(bool? val) {
+        if (val.HasValue)
+        {
+            return Write(val.Value);
+        }
+        else
+        {
+            throw new ArgumentException("Cannot write a null type!");
+        }
+    }
 
     /**
      * Append the current size of this packet to the front of the packet. This is useful for dynamic length packets
@@ -416,7 +528,7 @@ public class Packet {
     public Packet HandlePacket(IPlayerClient client) {
         this.client = client;
         Ended = false;
-        handle();
+        Handle();
         return this;
     }
 
@@ -441,7 +553,7 @@ public class Packet {
         return this;
     }
 
-    protected virtual void handle() {
+    protected virtual void Handle() {
         throw new NotImplementedException("This packet does not handle data!");
     }
 

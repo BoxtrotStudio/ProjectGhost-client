@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EventPacket : Packet {
-	protected override void handle()
+	protected override void Handle()
 	{
 		var packetNumber = Consume(4).AsInt();
 		if (packetNumber < client.LastRead)

@@ -4,4 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SimpleJoinQueue.unity
+    guid: 826d769fa1ba044d193fae4acb4a41f1
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: ce2814d10fbb84b47a5424f3e9dd5838
+  m_configObjects: {}

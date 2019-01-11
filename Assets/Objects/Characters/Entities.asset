@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b384c794569e14789bf2586c17ebbb01, type: 3}
+  m_Name: Entities
+  m_EditorClassIdentifier: 
+  prefabs:
+  - prefab: {fileID: 1300520568357308, guid: a00170d1831334087835616b52035e5d, type: 2}
+    id: 2
+  - prefab: {fileID: 1223747986382970, guid: f958f762f50944a328dd9692480534dc, type: 2}
+    id: 5
+  - prefab: {fileID: 1435149487172308, guid: 381696081c81c4e1fb64418fb4224389, type: 2}
+    id: 6
+  - prefab: {fileID: 1342723818449708, guid: d6ef7fec90a3b4416a3e1410466b1d4f, type: 2}
+    id: 10
+  - prefab: {fileID: 1607406085599438, guid: 84147d422eb6a41249923d142e9f086f, type: 2}
+    id: 11
+  - prefab: {fileID: 1711967257787022, guid: 65d4fabf50a344038986034f58eebdbb, type: 2}
+    id: 12
+  - prefab: {fileID: 1710222458987402, guid: e795b40f0a4f74abb9c0f6aeead6283c, type: 2}
+    id: 13
+  - prefab: {fileID: 1192309698470266, guid: ffc5ce791358b4a889c1aa06e6e6c682, type: 2}
+    id: 14
+  - prefab: {fileID: 1153223785734200, guid: 4d82f885a661349448ea4486482159c1, type: 2}
+    id: 15
+  - prefab: {fileID: 1510627025346170, guid: 133495c6f2feb41c6b376d5a4865031e, type: 2}
+    id: 16
+  - prefab: {fileID: 1172932505711270, guid: 8c9d937663f5b4da6bc60bc1871dd39f, type: 2}
+    id: 80
+  - prefab: {fileID: 1279134529857464, guid: 6e2f6244eafcb4a83a48cc2ec9021916, type: 2}
+    id: 81
+  - prefab: {fileID: 1125481040014328, guid: caa349069d972428488401fca1391ce8, type: 2}
+    id: -3
+  - prefab: {fileID: 1836843636124952, guid: aa4d3d30ec4c44593a05ba54ddaaa898, type: 2}
+    id: 85
+  - prefab: {fileID: 1623383143884666, guid: 3913f9be328f3409e9f09c1f1b58f46b, type: 2}
+    id: 86
+  - prefab: {fileID: 1182062129313238, guid: a16d698c300ae42d687f35d469d83aae, type: 2}
+    id: 93
+  characters: {fileID: 11400000, guid: cc9b919a8abc14e5ea5b10f73dc46398, type: 2}
+  world: {fileID: 0}

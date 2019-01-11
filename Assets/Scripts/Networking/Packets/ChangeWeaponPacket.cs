@@ -7,6 +7,9 @@ public class ChangeWeaponPacket : Packet {
     {
         var weapon = args[0] as byte?;
 
+        if (weapon == 0)
+            weapon = 1; //Fail safe if they choose default (0) weapon
+
         Write((byte)0x22);
         Write(weapon);
         EndTCP();
